@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    {% for vzdelani in vzdelani %}
+        <div class="doba">{{vzdelani.doba}}</div><h3>{{vzdelani.instituce}}</h3>
+        <h5>{{vzdelani.titul}}</h5><br>
+        <p>{{vzdelani.obor}} <br>
+        <p>{{vzdelani.popis}} <br>
+        <br><br>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+    {% for zkusenost in pracovni_zkusenosti %}
+        <div class="doba">{{zkusenost.doba}}</div><h3>{{zkusenost.pozice}}</h3>
+        <h5>{{zkusenost.zamestnavatel}}</h5> <br>
+        <p>{{zkusenost.napln}} <br>
+        <br><br>
+    {% endfor %}
+{% endblock %}

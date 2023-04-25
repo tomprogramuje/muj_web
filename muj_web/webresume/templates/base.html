@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" type ="text/css"/>
+    <meta name="viewport" content="width=device-width, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Webové resume</title>
+</head>
+<body>
+    <nav>
+        <div class="flex_box">
+            <div class="nav_item"><a href="{% url 'o_mne' %}">O mně</a></div>
+            <div class="nav_item"><a href="{% url 'pracovni_zkusenosti' %}">Pracovní zkušenosti</a></div>
+            <div class="nav_item"><a href="{% url 'portfolio' %}">Portfolio</a></div>
+            <div class="nav_item"><a href="{% url 'vzdelani' %}">Vzdělání</a></div>
+            <div class="nav_item"><a href="{% url 'dovednosti' %}">Dovednosti</a></div>
+            <div class="nav_item"><a href="{% url 'zajmy' %}">Zájmy</a></div>
+        </div>
+    </nav>
+    <div class="content">
+    {% block content %}
+
+    {% endblock %}
+    </div>
+    <footer>
+        ©2023 Tomáš Severa
+    </footer>
+</body>
+</html>

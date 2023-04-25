@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+    {% for projekt in projekty %}
+        <div class="doba">{{projekt.doba}}</div><h3>{{projekt.nazev}}</h3>
+        <h5>{{projekt.urceni}}</h5> <br>
+        <p>{{projekt.detail}} <br>
+        <br><br>
+    {% endfor %}
+{% endblock %}
