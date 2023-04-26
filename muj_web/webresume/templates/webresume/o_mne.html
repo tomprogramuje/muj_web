@@ -2,11 +2,33 @@
 {% block content %}
 {% load static %}
 <div>
-  <img class="ja" src="{% static 'webresume/ja.jpg' %}" alt="Já" width="200 px"/> <br>
+  <img class="ja" src="{% static 'webresume/ja.jpg' %}" alt="Já" width="250px"/> <br>
   <h2>Tomáš <span style="color: rgb(32, 108, 180);">Severa</span></h2>
   <h4>Duchcov, 419 01 CZ</h4>
   <h5>(+420) 733 127 963</h5>
   <h5><a href="mailto:tom.severa@outlook.cz" style="color: rgb(32, 108, 180);">tom.severa@outlook.cz</a></h5>
   <p>Jsem začínající programátor, který má velkou chuť se neustále zlepšovat, aby v oboru jednoho dne prorazil.</p>
+</div>
+<div class="socialni_site">
+  <div class="linkedin">
+    <a href="https://www.linkedin.com/in/tom%C3%A1%C5%A1-severa-908478136/">
+      <img src="{% static 'webresume/devicon-master/icons/linkedin/linkedin-original.svg' %}" width="50px" />
+    </a>
+  </div>
+  <div class="github">
+    <a href="https://github.com/tomprogramuje">
+      <img src="{% static 'webresume/devicon-master/icons/github/github-original.svg' %}" width="50px"/>
+    </a>
+  </div>
+  <div class="facebook">
+    <a href="https://www.facebook.com/tomas.severa1/">
+      <img src="{% static 'webresume/devicon-master/icons/facebook/facebook-original.svg' %}" width="50px"/>
+    </a>
+  </div>
+  <div class="twitter">
+    <a href="https://twitter.com/tom_severa">
+      <img src="{% static 'webresume/devicon-master/icons/twitter/twitter-original.svg' %}" width="50px"/>
+    </a>
+  </div>
 </div>
 {% endblock %}

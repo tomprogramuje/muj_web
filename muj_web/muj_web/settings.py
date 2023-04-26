@@ -22,6 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = '!g@f#=fy)dn6hwe-cy-f!a-52y_(5o%vuzu9!ua$1k1a6z4e3x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -32,7 +33,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'crispy_bootstrap4',
+    'crispy_bootstrap5',
     'crispy_forms',
     'webresume',
     'django.contrib.admin',
@@ -43,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
